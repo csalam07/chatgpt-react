@@ -3,6 +3,7 @@ import './Chatbox.css';
 import { DiReact } from 'react-icons/di';
 import { IoMdSend } from 'react-icons/io';
 import ThreeDotLoading from '../ThreedotLoading';
+import Typewriter from 'typewriter-effect';
 
 const baseUrl = 'https://ask-me-anything-ehws.onrender.com/';
 
@@ -102,11 +103,18 @@ const ChatLog = ({ message, loading }) => {
             className="avatar"
           />
         )}
-        <div
+        {/* <div
           dangerouslySetInnerHTML={{ __html: message.message }}
           className="message"
           tyle={{ whiteSpace: 'pre' }}
-        />
+        /> */}
+        <div className="message">
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter.typeString(message.message).pauseFor(1000).start();
+            }}
+          />
+        </div>
       </div>
       {loading && (
         <div className="chatBox__messageCenter">
