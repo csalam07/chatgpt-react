@@ -41,17 +41,6 @@
   color: lightgray;
 }
 
-.chatbox__footerText {
-  font-size: 0.75em;
-  font-weight: 300;
-  color: lightgray;
-  line-height: 1rem;
-}
-
-.chatbox__footerText a {
-  color: lightgray;
-}
-
 .chatBox__log {
   text-align: left;
   overflow-y: auto;

@@ -82,14 +82,6 @@ function ChatBox({ clearData }) {
             onClick={handleSubmit}
           />
         </form>
-
-        <p className="chatbox__footerText">
-          <a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes">
-            ChatGPT Jan 9 Version
-          </a>
-          . Free Research Preview. Our goal is to make AI systems more natural
-          and safe to interact with. Your feedback will help us improve.
-        </p>
       </div>
     </section>
   );
